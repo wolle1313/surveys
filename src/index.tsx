@@ -4,7 +4,7 @@ import App from './App';
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";                                //icons
-import SurveyContextProvider from './SurveyContext';
+import SurveyContextProvider from './components/SurveyContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

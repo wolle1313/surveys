@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import ResultsWrapper from './ResultsWrapper';
-import SurveryForm from './SurveyForm';
+import ResultsWrapper from './components/ResultsWrapper';
+import SurveryForm from './components/SurveyForm';
 
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(localStorage.getItem('submitted') || '')

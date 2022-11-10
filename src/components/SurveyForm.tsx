@@ -6,11 +6,11 @@ import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 
 import QuestionNotFound from './QuestionNotFound';
-import MultipleAnswers from './questions/MultipleAnswers';
-import Open from './questions/Open';
-import SingleAnswer from './questions/SingleAnswer';
+import MultipleAnswers from '../questions/MultipleAnswers';
+import Open from '../questions/Open';
+import SingleAnswer from '../questions/SingleAnswer';
 import { SurveyContext } from './SurveyContext';
-import questionForms from './questionForms';
+import questionForms from '../questionForms';
 import { Answer } from 'types';
 
 
@@ -33,7 +33,7 @@ const SurveryForm = ({setIsSubmitted}: Props) => {
        const hours = Math.floor(timeOfSubmitting / 3600)
        const minutes = Math.floor((timeOfSubmitting % 3600) / 60)
        const seconds = Math.floor((timeOfSubmitting % 3600) % 60)
-       return `${hours && hours > 0 ? `${hours}h ` : ''}${minutes && minutes > 0 ? `${minutes}min ` : ''}${seconds && seconds > 0 ? `${seconds}sec ` : ''}`
+       return `${hours && hours > 0 ? `${hours}h ` : ''}${minutes && minutes > 0 ? `${minutes}min ` : ''}${seconds && seconds > 0 ? `${seconds}sec` : ''}`
     }
 
     const onSubmit = (data: any) => {

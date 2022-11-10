@@ -1,12 +1,13 @@
 import { Button } from 'primereact/button';
 import React, { useContext, useState } from 'react'
-import { SurveyContext } from 'SurveyContext';
-import SingleSurveyItem from 'SingleSurveyItem';
+import { SurveyContext } from 'components/SurveyContext';
+import SingleSurveyItem from 'components/SingleSurveyItem';
 
 const SingleSurvey = () => {
     const { surveys } = useContext(SurveyContext)
     const [currentSurvey, setCurrentSurvey] = useState(0)
     const maxLength = surveys.length
+    
     
     return ( 
     <>

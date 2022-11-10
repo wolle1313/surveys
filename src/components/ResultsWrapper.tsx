@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 import { TabMenu } from 'primereact/tabmenu';
 
 import { MenuTypes } from 'types';
-import SingleSurvey from 'SingleSurvey';
-import AllSurveys from 'AllSurveys';
+import SingleSurvey from 'components/SingleSurvey';
+import AllSurveys from 'components/AllSurveys';
 import { Card } from 'primereact/card';
 
 const menuItems = [{label: MenuTypes.PODSUMOWANIE_ODPOWIEDZI, icon: 'pi pi-fw pi-folder'}, {label: MenuTypes.POJEDYNCZE_ANKIETY, icon: 'pi pi-fw pi-file'}]
@@ -18,9 +18,9 @@ const renderMenu = () => {
     if(currentMenuItem === MenuTypes.POJEDYNCZE_ANKIETY) { return <SingleSurvey />}
 }
     return ( 
-        <Card style={{width: 800, margin: '50px auto'}}>
+        <Card style={{width: 800, margin: '25px auto'}}>
 
-    <div className='flex flex-column align-items-center w-full p-5 mx-auto'>
+    <div className='flex flex-column align-items-center w-full p-4 mx-auto'>
         <h1>Ankieta przedszkoleniowa:</h1>
         <h1>TYPESCRIPT</h1>
         <div>

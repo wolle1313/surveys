@@ -1,5 +1,5 @@
 import React, {ReactNode, createContext, useState} from 'react'
-import { Survey } from './types'
+import { Survey } from '../types'
 
 interface Context {
     surveys: Survey[],

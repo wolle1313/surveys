@@ -25,7 +25,7 @@ const SingleSurveyItem = ({survey}: Props) => {
     <div>
         {questionForms.map((questionItem, index) => {return(
             <div>
-            <div><h4>Pytanie {index}</h4></div>
+            <div><h4>Pytanie {index + 1}</h4></div>
             <div><h4>{questionItem.question}</h4></div>
             <div className='my-4'>
             {renderAnswer(questionItem)}
